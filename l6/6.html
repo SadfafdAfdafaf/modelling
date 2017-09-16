@@ -1,0 +1,88 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+		<script type="text/javascript" src="6.js"></script>
+  </head>
+  <body>
+    <div style="width: 620px">      
+      <div>
+        <span>
+          <div style="min-width: 300px; max-width: 300px;">            
+            <div style="text-align: left">
+              Экспоненциальное<br>         
+              <div style="display: inline-block">
+                &Lambda;:
+              </div>
+              <div style="display: inline-block">
+                <input type="text" class="text_field" style="width: 60px" id="lambda" value="1" />
+              </div>
+            </div>
+          </div>          
+          <div style="min-width: 300px; max-width: 300px">
+            <div style="text-align: left">
+              Равномерное<br>              
+              <div style="display: inline-block">
+                a:<br>
+				b:
+              </div>
+              <div style="display: inline-block">
+                <input type="text" class="text_field" style="width: 60px" id="queue-a" value="1"/><br>
+				<input type="text" class="text_field" style="width: 60px" id="queue-b" value="10"/>
+              </div>
+            </div>
+          </div>
+        </span>
+        <span>
+          <div style="min-width: 300px; max-width: 300px">
+            <div style="text-align: left">
+              <div style="display: inline-block">
+                Длина очереди:<br>
+                Количество заявок:
+              </div>
+              <div style="display: inline-block">
+                <input type="text" class="text_field" style="width: 60px" id="queue-length" value="50" /><br>
+                <input type="text" class="text_field" style="width: 60px" id="req-count" value="100" /><br>
+              </div>
+            </div>
+          </div>
+        </span><br>
+        <button onclick="simulate()" id="sim-button">Запустить симуляцию</button>
+        <div>
+          Работа: <span id="result"></span><br>
+        </div>
+        <div>          
+          <div id="simulation-info" style="margin: 0 auto;  width: 570px">            
+            <div>
+              <div style="display: inline-block; text-align: left">
+                Длина очереди:<br>
+                Заявок в очереди:<br>
+              </div>
+              <div style="display: inline-block; min-width: 50px; max-width: 50px; text-align: left">
+                <span id="sdata-a">0</span><br>
+                <span id="sdata-b">0</span>
+              </div><br>
+              <div style="display: inline-block; text-align: left">
+                Обработано заявок:<br>
+                Потеряно заявок:<br>
+              </div>
+              <div style="display: inline-block; min-width: 50px; max-width: 50px; text-align: left">
+                <span id="sdata-d">0</span><br>
+                <span id="sdata-f">0</span>
+              </div><br>              
+              <div style="display: inline-block; text-align: left">
+                Окно 1:<br>
+                Окно 2:<br>
+                Окно 3:
+              </div>
+              <div style="display: inline-block; min-width: 50px; max-width: 50px; text-align: left">
+                <span id="sdata-g">Обед</span><br>
+                <span id="sdata-h">Обед</span>
+                <span id="sdata-j">Обед</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
